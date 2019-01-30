@@ -1,0 +1,6 @@
+D:\desktop\homework\win form\PosSystem\CodedUITestProject\bin\Debug\CodedUITestProject.dll
+D:\desktop\homework\win form\PosSystem\CodedUITestProject\bin\Debug\CodedUITestProject.pdb
+D:\desktop\homework\win form\PosSystem\CodedUITestProject\obj\Debug\PosSystemCodedUITests.csprojAssemblyReference.cache
+D:\desktop\homework\win form\PosSystem\CodedUITestProject\obj\Debug\PosSystemCodedUITests.csproj.CoreCompileInputs.cache
+D:\desktop\homework\win form\PosSystem\CodedUITestProject\obj\Debug\CodedUITestProject.dll
+D:\desktop\homework\win form\PosSystem\CodedUITestProject\obj\Debug\CodedUITestProject.pdb

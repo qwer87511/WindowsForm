@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="DrawingApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrawingApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1366" Height="768">
+
+    <Grid x:Name="_grid" FocusVisualPrimaryBrush="#FF7E4444">
+        <Button x:Name="_undoButton" Content="Undo" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="#FF073C11" Foreground="White" Click="HandleUndoButtonClick" IsEnabled="{Binding IsUndoButtonEnabled}" Background="#33E66318" FocusVisualPrimaryBrush="#FFC58E17" FocusVisualSecondaryBrush="#9936AEC9"/>
+        <Button x:Name="_redoButton" Content="Redo" HorizontalAlignment="Left" Margin="180,20,0,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="#FF044B11" Foreground="White" Click="HandleRedoButtonClick" IsEnabled="{Binding IsRedoButtonEnabled}" Background="#33DC5C12" FocusVisualPrimaryBrush="#FFDCA225" FocusVisualSecondaryBrush="#992DACC9"/>
+        <Button x:Name="_saveButton" Content="Save" HorizontalAlignment="Left" Margin="340,20,0,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="White" Foreground="White" Click="HandleSaveButtonClick"/>
+        <Button x:Name="_loadButton" Content="Load" HorizontalAlignment="Left" Margin="500,20,0,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="White" Foreground="White" Click="HandleLoadButtonClick"/>
+        <Button x:Name="_lineButton" Content="Line" HorizontalAlignment="Right" Margin="0,20,500,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" Foreground="White" BorderBrush="White"/>
+        <Button x:Name="_diamondButton" Content="Diamond" HorizontalAlignment="Right" Margin="0,20,340,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="White" Foreground="White"/>
+        <Button x:Name="_ellipseButton" Content="Ellipse" HorizontalAlignment="Right" Margin="0,20,180,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="White" Foreground="White" Click="HandleEllipseButtonClick"/>
+        <Button x:Name="_clearButton" Content="Clear" HorizontalAlignment="Right" Margin="0,20,20,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="24" BorderBrush="White" Foreground="White"/>
+        <Canvas x:Name="_canvas" Height="661" Margin="20,90,20,0" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
+
+    </Grid>
+</Page>

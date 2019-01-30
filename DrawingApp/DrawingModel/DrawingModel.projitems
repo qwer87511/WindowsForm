@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f73d9494-4133-40db-9608-9205e13ea040</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DrawingModel</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CommandManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diamond.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DrawCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DrawingState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ellipse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDriveService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IGraphics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Line.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoveCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PointerState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShapeFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)clientSecret.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
